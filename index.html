@@ -85,12 +85,77 @@
             4. elements tags 
         </pre>
         <br/>
-        <pre>
+        <pre style="background-color: rgb(231, 157, 157);">
            <h3>Css specificity another is the  </h3> 
             1.Inline css 
             2.internal css 
             3. External css 
         </pre>
+    </section>
+
+    <section>
+        <h2>Css Combinators </h2>
+
+
+            <h4>Descendant Selector ( div p)</h4>
+                <div class="descendant">
+                     <p>This selector is catch all styles inside the div</p>
+                     <p>The Example Comes</p>
+                     <p>This is hakkanis styles</p>
+                </div>
+
+                <br/>
+                <br/>
+
+            <h4>Child Selector (div > p)</h4>
+
+               <div class="Child">
+                     <p>This selector is catch all styles inside the child which is exactly match </p>
+                       <span> <p>this is not working</p> </span>
+                     <p>The Example Comes</p>
+                  
+                </div>
+
+                <br/>
+                <br/>
+
+            <h4>Adjacent Sibling Selector Selector (div+p)</h4>
+
+            <div class="Adjacent">
+                   <p>It is working after the class/id/element which tag,item ,class is match </p> 
+                   <p>Example is given the bellow </p> 
+            </div>
+                   <p>It is Working usingf Adjacent Working </p> 
+                   <p>It is not because only one match element is working Working usingf Adjacent Working </p> 
+                   <p>It is not because only one match element is working Working usingf Adjacent Working </p> 
+
+
+                <br/>
+                <br/>
+            
+            <h4>General Sibling Selector Selector (div ~ p )</h4>
+
+             <div class="general-sibling-selector">
+                <p>This is not working </p>
+                <p>
+                    This is the general sibling selectors 
+                </p>
+                <p>This is the higher sibling selectors </p>
+             </div>
+
+             <p>General Sibling selector is working after the div</p>
+             <p>General Sibling selector is working after the div</p>
+
+             <span>
+                <p>General Sibling selector is working after the div</p>
+             </span>
+             
+             <i> 
+                 <p>General Sibling selector is working after the div</p> 
+            </i>
+
+            <p>General Sibling selector is working after the div</p>
+    
     </section>
 
 
